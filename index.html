@@ -16,12 +16,12 @@
             font-family: Arial, sans-serif; /* Шрифт */
         }
         button {
-            padding: 40px;
+            padding: 40px; /* Увеличьте отступ, чтобы сделать кнопку квадратной */
             font-size: 24px;
             cursor: pointer;
-            background-color: #7B68EE; /* Цвет фона кнопки */
-            color: white; /* Цвет текста кнопки */
-            border: none; /* Убираем рамку */
+            background-color: #7B68EE;
+            color: white;
+            border: none;
             border-radius: 5px; /* Скругляем углы */
             transition: background-color 0.3s;
             width: 200px; /* Ширина кнопки */
@@ -40,20 +40,15 @@
 </head>
 <body>
 
-<h1>каеф саунд</h1>
-
-<button onclick="window.open('https://t.me/m1qyz', '_blank')">tg : m1qyz</button>
-<button onclick="window.open('https://www.tiktok.com/@m1tqy', '_blank')">tt : m1tqy</button>
+<h1>tg : m1qyz | tt : m1tqy</h1>
+<button onclick="playSound()">kaef | sound</button>
 
 <audio id="audio" src="kaef.mp3" autoplay loop></audio>
 
 <script>
-    window.onload = function() {
+    function playSound() {
         var audio = document.getElementById("audio");
-        audio.volume = 1.0; // Установите громкость на 100%
-        audio.play().catch(function(error) {
-            console.log("Автоматическое воспроизведение заблокировано:", error);
-        });
+        audio.play();
     }
 </script>
 
