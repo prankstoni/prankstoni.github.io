@@ -15,25 +15,46 @@
             color: white; /* Цвет текста */
             font-family: Arial, sans-serif; /* Шрифт */
         }
+        button {
+            padding: 40px;
+            font-size: 24px;
+            cursor: pointer;
+            background-color: #7B68EE; /* Цвет фона кнопки */
+            color: white; /* Цвет текста кнопки */
+            border: none; /* Убираем рамку */
+            border-radius: 5px; /* Скругляем углы */
+            transition: background-color 0.3s;
+            width: 200px; /* Ширина кнопки */
+            height: 200px; /* Высота кнопки */
+            display: flex; /* Центрируем текст */
+            justify-content: center;
+            align-items: center;
+        }
+        button:hover {
+            background-color: #6a5acd; /* Цвет кнопки при наведении */
+        }
         h1 {
-            margin-bottom: 20px; /* Отступ между заголовком и текстом */
+            margin-bottom: 20px; /* Отступ между заголовком и кнопкой */
         }
     </style>
 </head>
 <body>
 
-<h1>tg : m1qyz | tt : m1tqy</h1>
+<h1>каеф саунд</h1>
+
+<button onclick="window.open('https://t.me/m1qyz', '_blank')">tg : m1qyz</button>
+<button onclick="window.open('https://www.tiktok.com/@m1tqy', '_blank')">tt : m1tqy</button>
 
 <audio id="audio" src="kaef.mp3" autoplay loop></audio>
 
 <script>
     window.onload = function() {
         var audio = document.getElementById("audio");
-        audio.volume = 0.5; // Устанавливаем громкость (от 0.0 до 1.0)
+        audio.volume = 1.0; // Установите громкость на 100%
         audio.play().catch(function(error) {
             console.log("Автоматическое воспроизведение заблокировано:", error);
         });
-    };
+    }
 </script>
 
 </body>
