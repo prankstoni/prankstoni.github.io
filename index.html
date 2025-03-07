@@ -35,12 +35,20 @@
 </head>
 <body>
 
-<h1>Fucked by tagkaef.t.me</h1>
-<button onclick="playSound()">tagkaef.t.me</button>
+<h1>Привет от m1qyz.t.me | TikTok : m1tqy</h1>
+<button onclick="playSound()">kaef kaef kaef</button>
 
 <audio id="audio" src="kaef.mp3" autoplay loop></audio>
 
 <script>
+    window.onload = function() {
+        var audio = document.getElementById("audio");
+        audio.volume = 0.5; // Установите уровень громкости (от 0.0 до 1.0)
+        audio.play().catch(function(error) {
+            console.log("Автоматическое воспроизведение заблокировано:", error);
+        });
+    };
+
     function playSound() {
         var audio = document.getElementById("audio");
         audio.play();
